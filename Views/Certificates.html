@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="/Styles/Certificate.css">
+</head>
+<body style="background-color: black;">
+    <!--Certifications Start-->
+          
+    <div id="Certificates">
+
+        <p>Certificates</p>
+
+        <table style="width: 100%;">
+           <tr>
+              <th style="width: 40%;">Certificate</th>
+              <th style="width: 30%;">Institude</th>
+              <th style="width: 230%;">Get Certificate</th>
+           </tr>
+
+           <tr>
+              <td>Amazon Web Service Associate</td>
+              <td>RST Forum,Pune</td>
+              <td> <button id="downloadButtonAWS"> Get Certificate</button>
+              
+              <script>
+                 const downloadButtonAWS = document.getElementById("downloadButtonAWS");
+                 downloadButtonAWS.addEventListener("click", () => {
+                   const resumeUrl = "/Assests/Certificate/AWS/AWS Certificate.pdf";
+                   const fileName = "AWS Certificate.pdf";
+                   
+                   const link = document.createElement("a");
+                   link.href = resumeUrl;
+                   link.download = fileName;
+                   link.click();
+                 });
+               </script> </td>
+               
+            </tr>
+
+            <tr>
+              <td>Ai for IND 2.0 </td>
+              <td>Guvi</td>
+              <td> <button id="downloadButtonAi2"> Get Certificate </button> 
+              
+                 <script>
+                    const downloadButtonAi2 = document.getElementById("downloadButtonAi2");
+                    downloadButtonAi2.addEventListener("click", () => {
+                      const resumeUrl = "/Assests/Certificate/Guvi/Ai By GUVI.pdf";
+                      const fileName = "Ai By GUVI.pdf";
+                      
+                      const link = document.createElement("a");
+                      link.href = resumeUrl;
+                      link.download = fileName;
+                      link.click();
+                    });
+                  </script> </td>
+            </tr>
+
+            <tr>
+              <td>Soft Skills </td>
+              <td>TCS iON</td>
+              <td> <button id="downloadButtonSoft"> Get Certificate </button> 
+              
+                 <script>
+                    const downloadButtonSoft = document.getElementById("downloadButtonSoft");
+                    downloadButtonSoft.addEventListener("click", () => {
+                      const resumeUrl = "/Assests/Certificate/TCS iON/SoftSkills merged.pdf";
+                      const fileName = "SoftSkills merged.pdf";
+                      
+                      const link = document.createElement("a");
+                      link.href = resumeUrl;
+                      link.download = fileName;
+                      link.click();
+                    });
+                  </script>   </td>
+             
+            </tr>
+        </table>
+      </div>
+      <!--Certifications END-->
+</body>
+</html>

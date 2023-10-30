@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Resume</title>
+   <link rel="stylesheet" href="/Styles/Resume.css">
+</head>
+<body style="background-color: black;">
+   <!-- Edu +Resume Button Starts-->
+   <div id="Resume">
+
+      <p>Education Deatils <button id="downloadButton">
+         Download Resume
+       </button>
+
+       <script>
+         const downloadButton = document.getElementById("downloadButton");
+         downloadButton.addEventListener("click", () => {
+           const resumeUrl = "Assests/Resume/Tushar koli v4.pdf";
+           const fileName = "Tushar_koli_v4.pdf";
+           
+           const link = document.createElement("a");
+           link.href = resumeUrl;
+           link.download = fileName;
+           link.click();
+         });
+       </script>
+
+      </p>
+      
+       <div id="EduDetail">
+         <table style="width: 100%;">
+            <tr>
+               <th style="width: 25%;">Qulification</th>
+               <th style="width: 35%;">Institude</th>
+               <th style="width: 25%;">City</th>
+               <th style="width: 20%;" >Year</th>
+            </tr>
+
+            <tr>
+               <td>SSC</td>
+               <td>BPHV</td>
+               <td>Vasagade</td>
+               <td>2016</td>
+             </tr>
+
+             <tr>
+               <td>HSC</td>
+               <td>Rajaram College</td>
+               <td> Kolhapur</td>
+               <td>2018</td>
+             </tr>
+
+             <tr>
+               <td>BCS</td>
+               <td>Vivekanand College</td>
+               <td> Kolhapur</td>
+               <td>2022</td>
+             </tr>
+         </table>
+       </div>
+     
+
+   </div>
+    <!-- Edu +Resume Button Ends-->
+</body>
+</html>

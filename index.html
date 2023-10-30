@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="/Styles/About.css">
+    <link rel="stylesheet" href="/Styles/Certificate.css">
+    <link rel="stylesheet" href="/Styles/Contact.css">
+    <link rel="stylesheet" href="/Styles/DigitalClock.css">
+    <link rel="stylesheet" href="/Styles/Home.css">
+    <link rel="stylesheet" href="/Styles/Resume.css">-->
+    
+</head>
+<body style= "background-color: black ;">
+  <video autoplay muted loop id="smokevideo">
+    <source src="/Assests/Png/Videos/pexels-cottonbro-9694804 (2160p).mp4" type="video/mp4">
+  </video>
+   <div> 
+ 
+        <div id="Selfintro">
+           <!--Navbar Code Start--> 
+ 
+    <div>
+      <div id="Navbar">
+       
+         <div id="logo">
+            <img src="/Assests/Photos/Tk_BlackWhite.jpg"alt="Photo" style="height: 150px; width: 150px;"> 
+         </div>
+           
+             <ul>  
+                  <li><a href="#Selfintro">Home</a></li>
+                 <li><a href="#Resume">Resume</a></li>
+                 <li><a href="#Certificates">Certificates</a></li>
+                 <li><a href="#Contact">Contact</a></li>
+                 <li><a href="#About">About</a></li>
+             </ul>
+
+             <!--Digital Clock start-->
+             <div id="hero">
+              <div id="container">
+                <div id="clock">
+                  <span id="hrs">00</span>
+                  <span> : </span>
+                  <span id="min">00</span>
+                  <span> : </span>
+                  <span id="sec">00</span>
+                  <span id="ampm"> AM</span>
+                </div>
+              </div>
+            </div>
+          
+            <script>
+              let hrs = document.getElementById("hrs");
+              let min = document.getElementById("min");
+              let sec = document.getElementById("sec");
+              let ampm = document.getElementById("ampm");
+          
+              setInterval(() => {
+                let currentTime = new Date();
+                let hours = currentTime.getHours();
+                let minutes = currentTime.getMinutes();
+                let seconds = currentTime.getSeconds();
+                let amPm = hours >= 12 ? "PM" : "AM";
+          
+                // Convert to 12-hour format
+                if (hours > 12) {
+                  hours -= 12;
+                } else if (hours === 0) {
+                  hours = 12;
+                }
+          
+                hrs.innerHTML = (hours < 10 ? "0" : "") + hours;
+                min.innerHTML = (minutes < 10 ? "0" : "") + minutes;
+                sec.innerHTML = (seconds < 10 ? "0" : "") + seconds;
+                ampm.innerHTML = amPm;
+              }, 1000);
+            </script>
+ <!--Digital Clock end-->
+        </div>
+       </div>
+ 
+ <!--Navbar Code Ends--> 
+ 
+ 
+       
+             <div id="Header" >
+                 <div id="Intro">
+                    <div id="Name">
+                         <H1 >                    
+                            Tushar R Koli
+                         </H1>
+                    </div>
+                   <div id="Edu">
+                     <p>
+                           Bsc Computer Science (BCS)
+                     </p>
+                    
+                       <p>
+                              <a href="#Certificates">Certified AWS Associate</a>
+                       </p>
+                  </div>
+                 <div id="Photo">
+                        <img src="Assests/Photos/TK_BlackWhite_GreenShirt_2_.jpg" alt="Photo" height="900px" width="992px">
+                        
+
+                 </div>
+                 
+               </div>
+
+            </div>
+           
+            <!--About Starts Here-->
+         <div id="About">
+      <h2 >TUSHAR R KOLI</h2>
+      <hr style="width:400px" >
+      
+      <p id="Description">
+  Hello There! <br>
+  I am Tushar R Koli, a seasoned professional in the realm of technology hailing from the vibrant state of Maharashtra, India. With a Bachelor's degree in Computer Science and the distinction of being a Certified AWS Architect - Associate, I have dedicated myself to the dynamic world of IT. 
+  <br>
+  My journey has been marked by a fervent pursuit of excellence and a relentless drive to master the intricacies of cloud architecture and computing. I take pride in having achieved several certifications that showcase my commitment to staying at the forefront of technological advancements. 
+  <br>
+  
+  Renowned for my adeptness in creating robust and scalable cloud solutions, I have garnered recognition for my proficiency in translating intricate technical concepts into actionable strategies. My dedication to innovation and my ability to seamlessly navigate complex challenges have earned me a reputation as a reliable and forward-thinking professional.
+  
+  As an enthusiastic learner and a proactive problem solver, I consistently seek opportunities to refine my skills and contribute to transformative projects. I am excited to connect with fellow professionals, share insights, and collaborate on initiatives that push the boundaries of what technology can achieve.
+  
+  Looking forward to engaging with like-minded individuals who share a passion for technology and its limitless possibilities.
+      </p>
+ 
+      <div id="Skills">
+         <h3>My Skills</h3>
+         <p>Creativity</p>
+         <div id="white">
+            <div id="dark-grey" style="height:28px;width:85%"></div>
+          </div>
+
+          <p>Web Design</p>
+          <div id="white">
+            <div id="dark-grey" style="height:28px;width:80%"></div>
+          </div>
+
+          <p>Pressure Handeling</p>
+          <div id="white" style="height:28px;width:100%;"   >
+            <div id="dark-grey" style="height:28px;width:90%;;"></div>
+          </div>
+          <br>
+          <br>
+      </div>
+         </div>
+        
+        
+         <!--About Ends Here-->
+         
+         <!-- Edu +Resume Button Starts-->
+         <div id="Resume">
+
+            <p>Education Deatils <button id="downloadButton">
+               Download Resume
+             </button>
+
+             <script>
+               const downloadButton = document.getElementById("downloadButton");
+               downloadButton.addEventListener("click", () => {
+                 const resumeUrl = "Assests/Resume/Tushar koli v4.pdf";
+                 const fileName = "Tushar_koli_v4.pdf";
+                 
+                 const link = document.createElement("a");
+                 link.href = resumeUrl;
+                 link.download = fileName;
+                 link.click();
+               });
+             </script>
+
+            </p>
+            
+             <div id="EduDetail">
+               <table style="width: 100%;">
+                  <tr>
+                     <th style="width: 25%;">Qulification</th>
+                     <th style="width: 35%;">Institude</th>
+                     <th style="width: 25%;">City</th>
+                     <th style="width: 20%;" >Year</th>
+                  </tr>
+
+                  <tr>
+                     <td>SSC</td>
+                     <td>BPHV</td>
+                     <td>Vasagade</td>
+                     <td>2016</td>
+                   </tr>
+
+                   <tr>
+                     <td>HSC</td>
+                     <td>Rajaram College</td>
+                     <td> Kolhapur</td>
+                     <td>2018</td>
+                   </tr>
+
+                   <tr>
+                     <td>BCS</td>
+                     <td>Vivekanand College</td>
+                     <td> Kolhapur</td>
+                     <td>2022</td>
+                   </tr>
+               </table>
+             </div>
+           
+
+         </div>
+          <!-- Edu +Resume Button Ends-->
+
+          <!--Certifications Start-->
+          
+          <div id="Certificates">
+
+            <p>Certificates</p>
+
+            <table style="width: 100%;">
+               <tr>
+                  <th style="width: 40%;">Certificate</th>
+                  <th style="width: 30%;">Institude</th>
+                  <th style="width: 230%;">Get Certificate</th>
+               </tr>
+
+               <tr>
+                  <td>Amazon Web Service Associate</td>
+                  <td>RST Forum,Pune</td>
+                  <td> <button id="downloadButtonAWS"> Get Certificate</button>
+                  
+                  <script>
+                     const downloadButtonAWS = document.getElementById("downloadButtonAWS");
+                     downloadButtonAWS.addEventListener("click", () => {
+                       const resumeUrl = "/Assests/Certificate/AWS/AWS Certificate.pdf";
+                       const fileName = "AWS Certificate.pdf";
+                       
+                       const link = document.createElement("a");
+                       link.href = resumeUrl;
+                       link.download = fileName;
+                       link.click();
+                     });
+                   </script> </td>
+                   
+                </tr>
+
+                <tr>
+                  <td>Ai for IND 2.0 </td>
+                  <td>Guvi</td>
+                  <td> <button id="downloadButtonAi2"> Get Certificate </button> 
+                  
+                     <script>
+                        const downloadButtonAi2 = document.getElementById("downloadButtonAi2");
+                        downloadButtonAi2.addEventListener("click", () => {
+                          const resumeUrl = "/Assests/Certificate/Guvi/Ai By GUVI.pdf";
+                          const fileName = "Ai By GUVI.pdf";
+                          
+                          const link = document.createElement("a");
+                          link.href = resumeUrl;
+                          link.download = fileName;
+                          link.click();
+                        });
+                      </script> </td>
+                </tr>
+
+                <tr>
+                  <td>Soft Skills </td>
+                  <td>TCS iON</td>
+                  <td> <button id="downloadButtonSoft"> Get Certificate </button> 
+                  
+                     <script>
+                        const downloadButtonSoft = document.getElementById("downloadButtonSoft");
+                        downloadButtonSoft.addEventListener("click", () => {
+                          const resumeUrl = "/Assests/Certificate/TCS iON/SoftSkills merged.pdf";
+                          const fileName = "SoftSkills merged.pdf";
+                          
+                          const link = document.createElement("a");
+                          link.href = resumeUrl;
+                          link.download = fileName;
+                          link.click();
+                        });
+                      </script>   </td>
+                </tr>
+            </table>
+          </div>
+          <!--Certifications END-->
+
+          <!-- Contact Starts-->
+          <div>
+            <div id="Contact">
+               <p>Contact</p>
+            <ul id="ContactDetails">
+               <li> <i class="fa fa-whatsapp" aria-hidden="true" style="font-size:30px" color="white"> Contact:- 8623865076</i> </li>
+                 
+               <li><i class="fa fa-envelope-o" aria-hidden="true" >Email:- trendinghub0707@gmail.com</i> </li>
+               
+             
+            </ul>
+                  
+         </div>
+         </div>
+
+
+      
+          <!--Contact Ends-->
+         
+        
+      </div>  
+        
+    </div>
+      
+</body>
+</html>

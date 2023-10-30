@@ -1,0 +1,60 @@
+/*Selfintro Css Starts here*/
+#Selfintro{
+   
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+   
+#Header{
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    
+#Name  {
+    
+    color: white ;
+    font-size: 40px;
+    padding: 0%;
+    margin-left: 270px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    padding: 0%;
+    
+}
+
+
+
+#Edu {
+    color: white ;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 280px;
+   
+}
+#Edu a{
+  display: block;
+  margin: auto;
+  color: white ;
+    font-size: 30px;
+    margin-left: 80px;
+    justify-content: center;
+    
+}
+
+#Photo img{
+  display:block;
+  justify-content: center;   
+    margin: auto;
+    margin-left: 70px;
+   height: 900px;
+    width: 992px;
+    
+}
